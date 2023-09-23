@@ -23,7 +23,6 @@
               class="home-icon"
               src="assets/home-outline-black.png"
               alt="Outline of a home."
-              title="'Homeostasis'"
             />
           </li>
           <li><a href="#about-section">About</a></li>
@@ -34,99 +33,98 @@
     <main>
       <div id="project-section">
         <aside class="project-title"><h2>PROJECTS</h2></aside>
+        <div class="custom-break"></div>
         <div class="project-content">
           <ul>
-            <li>
-              <div class="slide">
-                <h3>horiseon-rafactor</h3>
-                <article>
-                  This landing page for the Horiseon website needed refactoring
-                  to improve accessibility and readability within the codebase.
-                </article>
-                <a href="https://github.com/stellyes/horiseon-refactor"
-                  >Visit</a
-                >
-              </div>
+            <li class="slide">
+              <h3>horiseon-rafactor</h3>
+              <article>
+                This landing page for the Horiseon website needed refactoring to
+                improve accessibility and readability within the codebase.
+              </article>
+              <a href="https://github.com/stellyes/horiseon-refactor">Visit</a>
             </li>
-            <li>
-              <div class="slide">
-                <h3>spoticry</h3>
-                <article>
-                  Python 3.9 application - Spotify data collection and mapping
-                  through web automation
-                </article>
-                <a href="https://github.com/stellyes/spoticry">Visit</a>
-              </div>
+            <li class="slide">
+              <h3>spoticry</h3>
+              <article>
+                Python 3.9 application - Spotify data collection and mapping
+                through web automation
+              </article>
+              <a href="https://github.com/stellyes/spoticry">Visit</a>
             </li>
-            <li>
-              <div class="slide">
-                <h3>web-resume</h3>
-                <article>
-                  A virtual resume to display my latest front-end expertise.
-                </article>
-                <a href="https://github.com/stellyes/web-resume">Visit</a>
-              </div>
+            <li class="slide">
+              <h3>web-resume</h3>
+              <article>
+                A virtual resume to display my latest front-end expertise.
+              </article>
+              <a href="https://github.com/stellyes/web-resume">Visit</a>
             </li>
-            <li>
-              <div class="slide">
-                <h3>spotify-distrokid-link</h3>
-                <article>
-                  Python 3.9 script utilizing Selenium to link an Instagram
-                  profile with a list of ISRC codes.
-                </article>
-                <a href="https://github.com/stellyes/spotify-distrokid-link"
-                  >Visit</a
-                >
-              </div>
+            <li class="slide">
+              <h3>spotify-distrokid-link</h3>
+              <article>
+                Python 3.9 script utilizing Selenium to link an Instagram
+                profile with a list of ISRC codes.
+              </article>
+              <a href="https://github.com/stellyes/spotify-distrokid-link"
+                >Visit</a
+              >
             </li>
-            <li>
-              <div class="slide">
-                <h3>anxietysim</h3>
-                <article>
-                  t's an anxiety choose-your-own-adventure, text-based game
-                </article>
-                <a href="https://github.com/stellyes/anxietysim">Visit</a>
-              </div>
+            <li class="slide">
+              <h3>anxietysim</h3>
+              <article>
+                t's an anxiety choose-your-own-adventure, text-based game
+              </article>
+              <a href="https://github.com/stellyes/anxietysim">Visit</a>
             </li>
-            <li>
-              <div class="slide">
-                <h3>mini-project-1-edx</h3>
-                <article>
-                  A landing page built using HTML and CSS to demonstrate the
-                  bootcamp's curriculum for week 1.
-                </article>
-                <a href="https://github.com/stellyes/mini-project-1-edx"
-                  >Visit</a
-                >
-              </div>
+            <li class="slide">
+              <h3>mini-project-1-edx</h3>
+              <article>
+                A landing page built using HTML and CSS to demonstrate the
+                bootcamp's curriculum for week 1.
+              </article>
+              <a href="https://github.com/stellyes/mini-project-1-edx">Visit</a>
             </li>
           </ul>
         </div>
       </div>
       <div id="about-section">
-        <p class="about-content">
-          My name is Ryan, I'm 24, currently living in California. I've always
-          loved tinkering with computers and was pretty glued to my parents' old
-          desktop rig back in 2007 when the internet was pretty new to me. I
-          have a diverse background that covers everything from art to
-          agriculture, music and more.
+        <article class="about-content">
+          <p>
+            My name is Ryan, I'm 24, currently living in California. I've always
+            loved tinkering with computers and was pretty glued to my parents'
+            old desktop rig back in 2007 when the internet was pretty new to me.
+          </p>
           <br />
-          I specialize in Backend Development, and have over a year of
-          professional experience working with the AWS platform to develop
-          scaleable and compact web applications.
-        </p>
+          <p>
+            I have a diverse background that covers everything from art to
+            agriculture, music and more. I specialize in Backend Development,
+            and have over a year of professional experience working with the AWS
+            platform to develop scaleable and compact web applications.
+          </p>
+        </article>
         <img
           class="about-image"
-          href="assets/stellyes.png"
+          href="./assets/stellyes.png"
           alt="A picture of Ryan England"
           title="This is me!"
         />
         <aside class="about-title"><h2>ABOUT</h2></aside>
       </div>
       <div id="contact-me">
-        <form></form>
+        <aside><h2>CONTACT ME</h2></aside>
+        <form id="contact">
+          <label for="name">Name: </label>
+          <input type="text" name="name" />
+          <br />
+          <label for="email">Email:</label>
+          <input type="text" name="email" />
+        </form>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer-card">
+      <div class="footer-content">
+        <p>Thanks for stopping by!</p>
+      </div>
+    </footer>
   </body>
 </html>
