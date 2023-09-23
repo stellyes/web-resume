@@ -8,15 +8,20 @@
 * {
   margin: 0;
   padding: 0;
-  z-index: 1;
 }
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sp-peach);
+}
+
 .title-card {
-  position: fixed;
+  position: absolute;
   height: 700px;
   width: 100%;
   background-image: url("../assets/camarillo.jpg");
@@ -24,12 +29,10 @@ body {
   background-position: center;
   object-fit: cover;
   object-position: 0% 100%;
-  z-index: -1;
 }
 
 .menu {
   position: relative;
-  height: 100px;
 }
 
 .menu ul {
@@ -56,7 +59,7 @@ body {
 }
 
 .menu ul li a:hover {
-  color: var(--sp-peach);
+  color: var(--sp-lightgreen);
   text-shadow: 2px 2px 2px #004225;
 }
 
@@ -65,14 +68,62 @@ body {
   height: auto;
 }
 
-.projec-section {
+#project-section,
+#about-section,
+#contact-me {
+  margin: 25px 5%;
+  z-index: 0;
+}
+
+#project-section {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  z-index: 0;
+}
+
+.project-title {
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  rotate: 180deg;
+  height: 500px;
+}
+
+.project-content ul {
+  display: flex;
+  flex-direction: column;
+  justify-self: self-start;
+}
+
+.project-content ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-content ul:nth-child(1) {
+  flex: 5;
+}
+
+.project-content ul:nth-child(2),
+.project-content ul:nth-child(3) {
+  flex: 3;
+}
+
+.slide {
+}
+
+#about-section {
   display: inline;
 }
 
-#project-title {
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  rotate: 180deg;
+.about-title {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  height: 100%;
+}
+
+.about-image {
+  height: fit-content;
 }
 
 @media screen and (max-width: 1180px) {

@@ -11,14 +11,13 @@
   <body>
     <header>
       <div
-        class="title-card"
+        class="menu title-card"
         title="Clouds over Camarillo, CA"
         alt="Clouds over Camarillo, CA"
-      ></div>
-      <div class="menu">
+      >
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#project-section">Projects</a></li>
           <li>
             <img
               class="home-icon"
@@ -27,27 +26,95 @@
               title="'Homeostasis'"
             />
           </li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-me">Contact</a></li>
         </ul>
       </div>
     </header>
     <main>
-      <div class="project-section">
-        <aside id="project-title"><h2>PROJECTS</h2></aside>
+      <div id="project-section">
+        <aside class="project-title"><h2>PROJECTS</h2></aside>
         <div class="project-content">
           <ul>
-            <li><div class="slide"></div></li>
-            <li><div class="slide"></div></li>
-            <li><div class="slide"></div></li>
-            <li><div class="slide"></div></li>
-            <li><div class="slide"></div></li>
-            <li></li>
+            <li>
+              <div class="slide">
+                <h3>horiseon-rafactor</h3>
+                <article>
+                  This landing page for the Horiseon website needed refactoring
+                  to improve accessibility and readability within the codebase.
+                </article>
+                <a href="https://github.com/stellyes/horiseon-refactor"
+                  >Visit</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <h3>spoticry</h3>
+                <article>
+                  Python 3.9 application - Spotify data collection and mapping
+                  through web automation
+                </article>
+                <a href="https://github.com/stellyes/spoticry">Visit</a>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <h3>web-resume</h3>
+                <article>
+                  A virtual resume to display my latest front-end expertise.
+                </article>
+                <a href="https://github.com/stellyes/web-resume">Visit</a>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <h3>spotify-distrokid-link</h3>
+                <article>
+                  Python 3.9 script utilizing Selenium to link an Instagram
+                  profile with a list of ISRC codes.
+                </article>
+                <a href="https://github.com/stellyes/spotify-distrokid-link"
+                  >Visit</a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <h3>anxietysim</h3>
+                <article>
+                  t's an anxiety choose-your-own-adventure, text-based game
+                </article>
+                <a href="https://github.com/stellyes/anxietysim">Visit</a>
+              </div>
+            </li>
+            <li>
+              <div class="slide">
+                <h3>mini-project-1-edx</h3>
+                <article>
+                  A landing page built using HTML and CSS to demonstrate the
+                  bootcamp's curriculum for week 1.
+                </article>
+                <a href="https://github.com/stellyes/mini-project-1-edx"
+                  >Visit</a
+                >
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="about-section">
-        <p class="about-content"></p>
+      <div id="about-section">
+        <p class="about-content">
+          My name is Ryan, I'm 24, currently living in California. I've always
+          loved tinkering with computers and was pretty glued to my parents' old
+          desktop rig back in 2007 when the internet was pretty new to me. I
+          have a diverse background that covers everything from art to
+          agriculture, music and more.
+          <br />
+          I specialize in Backend Development, and have over a year of
+          professional experience working with the AWS platform to develop
+          scaleable and compact web applications.
+        </p>
         <img
           class="about-image"
           href="assets/stellyes.png"
@@ -56,7 +123,7 @@
         />
         <aside class="about-title"><h2>ABOUT</h2></aside>
       </div>
-      <div class="contact-me">
+      <div id="contact-me">
         <form></form>
       </div>
     </main>
