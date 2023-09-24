@@ -255,7 +255,7 @@ aside h2 {
 }
 
 .description a {
-  height: 100%;
+  height: auto;
   width: 5%;
   margin: 0px 10px 10px 10px;
   font-size: 70%;
@@ -263,7 +263,7 @@ aside h2 {
   text-decoration: wavy;
   writing-mode: vertical-rl;
   text-orientation: sideways;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   color: var(--sp-darkgreen);
   text-shadow: #ffd09d82;
   transition: scale 0.3s;
@@ -343,10 +343,6 @@ aside h2 {
   display: flex;
 }
 
-.contact-entry {
-  margin: 0px 10px;
-}
-
 .footer-card {
   position: absolute;
   height: 200px;
@@ -370,7 +366,7 @@ aside h2 {
   text-shadow: 3px 3px 3px var(--sp-darkgreen);
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1008px) {
   .menu {
     height: 150px;
     color: var(--sp-darkgreen);
