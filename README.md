@@ -53,7 +53,7 @@ Follow these steps to complete the challenge:
 3. Reach out to your instructional support team throughout the module for help.
 4. Follow submission instructions.
 
-## Grading Requirements\_
+## Grading Requirements
 
 If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
 
