@@ -33,22 +33,9 @@ aside h2 {
   letter-spacing: 0.3rem;
 }
 
-.html-project::after {
-  height: 10px;
-  width: 10px;
-  content: url(../assets/html5.png);
-}
-
-.python-project::before {
-  max-height: max-content;
-  max-width: max-content;
-  content: url(../assets/python.png);
-}
-
-.aws-project::before {
-  max-height: max-content;
-  max-width: max-content;
-  content: url(../assets/aws.png);
+nav {
+  width: auto;
+  height: auto;
 }
 
 .title-card {
@@ -444,13 +431,14 @@ aside h2 {
     font-weight: 600;
   }
 
+  /* justify-content realigns flex items with the reduced viewport width */
   #project-section {
     justify-content: center;
   }
 
   .project-title {
-    height: 25%;
-    margin-top: -75%;
+    height: auto;
+    margin: -15%;
   }
 
   .project-content {
@@ -476,6 +464,7 @@ aside h2 {
     height: 95%;
   }
 
+  /* Prevents item overflow of its parent */
   .slide:nth-child(1):hover {
     scale: 1.02;
   }
@@ -513,6 +502,11 @@ aside h2 {
     display: none;
   }
 
+  /* Since the last three elements don't have space for all 
+    that comes with a slide, the description is removed and 
+    this block of CSS reorients and resizes the button to be 
+    passable on mobile screens. */
+
   .slide:nth-child(4) > .description a,
   .slide:nth-child(5) > .description a,
   .slide:nth-child(6) > .description a {
@@ -529,6 +523,7 @@ aside h2 {
     my smartphone. I prioritized that view of the webpage over my local one.
   */
 
+  /* Puts section title on top, followed by image, and about content */
   #about-section {
     flex-direction: column-reverse;
     height: 600px;
@@ -538,6 +533,7 @@ aside h2 {
     rotate: -90deg;
     height: 100%;
     margin: 0px;
+    margin-bottom: -50px;
   }
 
   .about-content {
@@ -548,7 +544,7 @@ aside h2 {
   }
 
   .about-image {
-    width: 65%;
+    width: 70%;
     aspect-ratio: 1/1;
     background-size: 100% auto;
     background-position: 50% 20%;

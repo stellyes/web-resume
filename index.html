@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Ryan England</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   </head>
   <body>
     <header>
+      <!--the menu class is in charge of the navigation panel
+          the title-card class is responsible for the background image-->
       <div
         class="menu title-card"
         title="Clouds over Camarillo, CA"
@@ -33,9 +35,20 @@
       </div>
     </header>
     <main>
+      <!--Project section intends to define a list of most recent projects displayed as a list
+        of flex items-->
       <div id="project-section">
+        <!--In the chrome devtools, this displays properly. It does not retain
+        its orientation when deployed on github pages. -->
         <aside class="project-title"><h2>PROJECTS</h2></aside>
         <div class="project-content">
+          <!--Each list item contains
+              - <h3> as the project title
+              - <article> which contains all of the (hidden until hover) info
+                about the project
+                  - <p> is the description of the project
+                  - <a> is a button to redirect the user to the project
+          -->
           <ul>
             <li class="slide">
               <h3>horiseon-rafactor</h3>
@@ -101,6 +114,7 @@
           </ul>
         </div>
       </div>
+      <!--The about section only has three elements, -->
       <div id="about-section">
         <article class="about-content">
           <p>
