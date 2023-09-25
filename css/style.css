@@ -63,7 +63,7 @@ aside h2 {
   position: relative;
 }
 
-.menu ul {
+.menu nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -72,19 +72,19 @@ aside h2 {
   padding-top: 50px;
 }
 
-.menu ul li {
+.menu nav ul li {
   margin: 0px 15px;
   letter-spacing: 0.1rem;
 }
 
-.menu ul li a {
+.menu nav ul li a {
   font-size: larger;
   font-weight: 600;
   text-decoration: none;
   color: var(--sp-darkgreen);
 }
 
-.menu ul li a:hover {
+.menu nav ul li a:hover {
   color: var(--sp-lightgreen);
   text-shadow: 2px 2px 2px var(--sp-darkgreen);
 }
@@ -435,11 +435,11 @@ aside h2 {
     text-shadow: 1px 1px 1px rgba(245, 245, 220, 0.8); /* Improves mobile screen contrast */
   }
 
-  .menu ul li {
+  .menu nav ul li {
     margin: 0px 10px;
   }
 
-  .menu ul li a {
+  .menu nav ul li a {
     font-size: medium;
     font-weight: 600;
   }
