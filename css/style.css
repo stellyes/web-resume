@@ -52,7 +52,6 @@ aside h2 {
 }
 
 .title-card {
-  position: absolute;
   height: 700px;
   width: 100%;
   background-image: url("../assets/camarillo.jpg");
@@ -124,7 +123,6 @@ aside h2 {
 
 .project-title {
   writing-mode: vertical-lr;
-  text-orientation: sideways;
   rotate: 180deg;
   text-align: center;
   width: 50px;
@@ -134,7 +132,6 @@ aside h2 {
 .project-content {
   width: 90%;
   height: 100%;
-  margin-right: 25px;
 }
 
 .project-content ul {
@@ -386,7 +383,6 @@ aside h2 {
 
   .project-title {
     align-self: center;
-    text-orientation: sideways;
     rotate: -90deg;
     height: 100%;
     margin-top: 75px;
@@ -555,14 +551,13 @@ aside h2 {
   }
 
   .about-image {
-    width: 50%;
+    width: 65%;
     aspect-ratio: 1/1;
     background-size: 100% auto;
     background-position: 50% 20%;
   }
 
   #contact-me p {
-    margin-top: 3%;
     font-size: x-small;
   }
 
