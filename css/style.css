@@ -555,7 +555,7 @@ aside h2 {
   }
 
   .about-image {
-    width: 80%;
+    width: 50%;
     aspect-ratio: 1/1;
     background-size: 100% auto;
     background-position: 50% 20%;
