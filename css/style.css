@@ -35,7 +35,7 @@ aside h2 {
 
 .html-project::after {
   height: 10px;
-  width: auto;
+  width: 10px;
   content: url(../assets/html5.png);
 }
 
@@ -136,6 +136,7 @@ aside h2 {
 .project-content {
   width: 90%;
   height: 100%;
+  margin-right: 25px;
 }
 
 .project-content ul {
@@ -144,7 +145,6 @@ aside h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px 5px;
-  width: 100%;
   height: 100%;
 }
 
@@ -200,6 +200,7 @@ aside h2 {
 
 .slide:nth-child(4) {
   background-image: url("https://promusicianhub.com/wp-content/uploads/2019/11/distrokid.png");
+  background-size: 100%;
 }
 
 .slide:nth-child(5) {
@@ -256,22 +257,25 @@ aside h2 {
 
 .description a {
   height: auto;
-  width: 5%;
-  margin: 0px 10px 10px 10px;
+  width: 4%;
+  margin: 10px 10px 10px 10px;
+  padding: 3px;
   font-size: 70%;
   text-align: center;
-  text-decoration: wavy;
   writing-mode: vertical-rl;
+  text-decoration: none;
   text-orientation: sideways;
   letter-spacing: 0.1rem;
   color: var(--sp-darkgreen);
-  text-shadow: #ffd09d82;
-  transition: scale 0.3s;
+  background-color: var(--sp-lightgreen);
+  border: 1px solid var(--sp-darkgreen);
+  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 
 .description a:hover {
-  color: var(--sp-deeporange);
-  scale: 1.1;
+  background-color: var(--sp-greenbean);
+  color: var(--sp-lightgreen);
 }
 
 #about-section {
@@ -292,7 +296,7 @@ aside h2 {
 
 .about-image {
   background-image: url("../assets/profile.jpeg");
-  background-size: 250px 250px;
+  background-size: 100% 100%;
   width: 25%;
   aspect-ratio: 1 / 1;
   transition: scale 0.3s ease;
@@ -366,14 +370,107 @@ aside h2 {
   text-shadow: 3px 3px 3px var(--sp-darkgreen);
 }
 
+/* Standard "Medium" tablet size
+  Source : https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+*/
 @media screen and (max-width: 1008px) {
+  .title-card {
+    height: 500px;
+  }
+
   .menu {
     height: 150px;
-    color: var(--sp-darkgreen);
-    text-shadow: 1px 1px 1px var(--sp-lightgreen);
+    text-shadow: 1px 1px 1px var(--sp-lightgreen); /* Improves mobile screen contrast */
+  }
+
+  #project-section {
+    flex-direction: column;
+  }
+
+  #project-section {
+    height: 700px;
+  }
+
+  .project-title {
+    align-self: center;
+    text-orientation: sideways;
+    rotate: -90deg;
+    height: 100%;
+    margin-top: 75px;
+    margin-bottom: -10%;
+  }
+
+  .project-content {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .project-content ul {
+    justify-content: space-between;
+    align-items: center;
+    height: 78%;
+  }
+
+  .slide:hover {
+    scale: 1.05;
+  }
+
+  .slide:nth-child(1) {
+    height: 100%;
+  }
+
+  .slide:nth-child(5) {
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  .description p {
+    font-size: 65%;
+  }
+
+  .description a {
+    max-width: 20px;
   }
 
   .about-content {
     font-size: small;
+  }
+}
+
+/* Standard "Small" smartphone size
+  Source : https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+*/
+
+@media screen and (max-width: 640px) {
+  .menu {
+    height: 100px;
+    text-shadow: 1px 1px 1px var(--sp-lightgreen); /* Improves mobile screen contrast */
+  }
+
+  .project-content {
+    margin-right: 0px;
+    width: 100%;
+    height: 90%;
+  }
+
+  .project-content ul {
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+  }
+
+  .slide {
+    width: calc(30% - 10px);
+    background-size: 100%;
+  }
+
+  .slide:nth-child(1) {
+    width: calc(97% - 20px);
+  }
+
+  .slide:nth-child(2),
+  .slide:nth-child(3) {
+    width: calc(50% - 29px);
   }
 }
