@@ -540,6 +540,7 @@ nav {
     height: 100%;
     width: 100%;
     line-height: 25px;
+    margin-bottom: 5px;
     font-size: small;
   }
 
@@ -568,6 +569,6 @@ nav {
 /* Fixes issue where project title overflows at certain low resolution mobile screens */
 @media screen and (max-width: 508px) {
   .project-title {
-    margin-top: -70%;
+    margin-top: -65%;
   }
 }
