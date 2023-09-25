@@ -35,7 +35,7 @@ aside h2 {
 
 .html-project::after {
   height: 10px;
-  width: auto;
+  width: 10px;
   content: url(../assets/html5.png);
 }
 
@@ -74,10 +74,8 @@ aside h2 {
 }
 
 .menu ul li {
-  margin: 0px;
+  margin: 0px 15px;
   letter-spacing: 0.1rem;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .menu ul li a {
@@ -136,6 +134,7 @@ aside h2 {
 .project-content {
   width: 90%;
   height: 100%;
+  margin-right: 25px;
 }
 
 .project-content ul {
@@ -144,7 +143,6 @@ aside h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px 5px;
-  width: 100%;
   height: 100%;
 }
 
@@ -200,6 +198,7 @@ aside h2 {
 
 .slide:nth-child(4) {
   background-image: url("https://promusicianhub.com/wp-content/uploads/2019/11/distrokid.png");
+  background-size: 100%;
 }
 
 .slide:nth-child(5) {
@@ -219,10 +218,6 @@ aside h2 {
   margin: 5%;
   background-color: #f5f5dc;
   border: 3px solid #004225;
-}
-
-.shades {
-  background-color: rgba(255, 207, 157, 0.9);
 }
 
 .description {
@@ -256,28 +251,30 @@ aside h2 {
 
 .description a {
   height: auto;
-  width: 5%;
-  margin: 0px 10px 10px 10px;
+  width: 4%;
+  margin: 10px;
+  padding: 3px;
   font-size: 70%;
   text-align: center;
-  text-decoration: wavy;
   writing-mode: vertical-rl;
+  text-decoration: none;
   text-orientation: sideways;
   letter-spacing: 0.1rem;
   color: var(--sp-darkgreen);
-  text-shadow: #ffd09d82;
-  transition: scale 0.3s;
+  background-color: var(--sp-lightgreen);
+  border: 1px solid var(--sp-darkgreen);
+  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 
 .description a:hover {
-  color: var(--sp-deeporange);
-  scale: 1.1;
+  background-color: var(--sp-greenbean);
+  color: var(--sp-lightgreen);
 }
 
 #about-section {
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   height: 300px;
 }
 
@@ -287,12 +284,12 @@ aside h2 {
   height: 100%;
   text-align: center;
   width: 50px;
-  margin: 25px 25px;
+  margin: 25px;
 }
 
 .about-image {
   background-image: url("../assets/profile.jpeg");
-  background-size: 250px 250px;
+  background-size: 100% 100%;
   width: 25%;
   aspect-ratio: 1 / 1;
   transition: scale 0.3s ease;
@@ -366,14 +363,217 @@ aside h2 {
   text-shadow: 3px 3px 3px var(--sp-darkgreen);
 }
 
+/* Standard "Medium" tablet size
+  Source : https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+*/
 @media screen and (max-width: 1008px) {
+  .title-card {
+    height: 500px;
+  }
+
   .menu {
     height: 150px;
-    color: var(--sp-darkgreen);
-    text-shadow: 1px 1px 1px var(--sp-lightgreen);
+    text-shadow: 1px 1px 1px var(--sp-lightgreen); /* Improves mobile screen contrast */
+  }
+
+  #project-section {
+    flex-direction: column;
+  }
+
+  #project-section {
+    height: 700px;
+  }
+
+  .project-title {
+    align-self: center;
+    text-orientation: sideways;
+    rotate: -90deg;
+    height: 100%;
+    margin-top: 75px;
+    margin-bottom: -10%;
+  }
+
+  .project-content {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .project-content ul {
+    justify-content: space-between;
+    align-items: center;
+    height: 78%;
+  }
+
+  .slide:hover {
+    scale: 1.05;
+  }
+
+  .slide:nth-child(1) {
+    height: 100%;
+  }
+
+  .slide:nth-child(5) {
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  .description p {
+    font-size: 65%;
+  }
+
+  .description a {
+    max-width: 20px;
   }
 
   .about-content {
     font-size: small;
+  }
+}
+
+/* Standard "Small" smartphone size
+  Source : https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+*/
+
+@media screen and (max-width: 640px) {
+  aside h2 {
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+  }
+
+  .menu {
+    height: 100px;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px 1px rgba(245, 245, 220, 0.8); /* Improves mobile screen contrast */
+  }
+
+  .menu ul li {
+    margin: 0px 10px;
+  }
+
+  .menu ul li a {
+    font-size: medium;
+    font-weight: 600;
+  }
+
+  #project-section {
+    justify-content: flex-start;
+  }
+
+  .project-title {
+    height: auto;
+    margin: -15%;
+  }
+
+  .project-content {
+    margin-right: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-content ul {
+    gap: 2px;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+  }
+
+  .slide {
+    width: calc(30% - 8px);
+    height: 30%;
+    background-size: auto 100%;
+  }
+
+  .slide:nth-child(1) {
+    width: 100%;
+    height: 95%;
+  }
+
+  .slide:nth-child(1):hover {
+    scale: 1.02;
+  }
+
+  .slide:nth-child(2),
+  .slide:nth-child(3) {
+    width: calc(50% - 25px);
+  }
+
+  .slide:nth-child(1) p {
+    font-size: 100%;
+    padding: 0px;
+  }
+  .slide:nth-child(2) p {
+    font-size: 65%;
+  }
+
+  .slide:nth-child(3) p {
+    font-size: 80%;
+    padding: 0px;
+  }
+
+  .slide:nth-child(4) h3,
+  .slide:nth-child(5) h3 {
+    font-size: smaller;
+  }
+
+  .slide:nth-child(6) h3 {
+    font-size: smaller;
+  }
+
+  .slide:nth-child(4) p,
+  .slide:nth-child(5) p,
+  .slide:nth-child(6) p {
+    display: none;
+  }
+
+  .slide:nth-child(4) > .description a,
+  .slide:nth-child(5) > .description a,
+  .slide:nth-child(6) > .description a {
+    font-weight: bold;
+    rotate: -90deg;
+    padding: 10px;
+    padding-right: 7px;
+    margin: 5px;
+  }
+
+  #about-section {
+    flex-direction: column-reverse;
+    height: 600px;
+  }
+
+  .about-title {
+    rotate: -90deg;
+    height: 100%;
+    margin: 0px;
+  }
+
+  .about-content {
+    height: 100%;
+    width: 100%;
+    line-height: 25px;
+    margin-top: 40px;
+    font-size: small;
+  }
+
+  .about-image {
+    width: 80%;
+    height: 200%;
+    padding-bottom: 25px;
+    background-size: 100% auto;
+    background-position: 50% 20%;
+  }
+
+  #contact-me p {
+    margin-top: 3%;
+    font-size: x-small;
+  }
+
+  .contact {
+    margin-top: 3%;
+    scale: 0.9;
+  }
+
+  .footer-content {
+    margin-top: 15%;
   }
 }
