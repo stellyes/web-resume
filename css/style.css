@@ -533,7 +533,7 @@ nav {
     rotate: -90deg;
     height: 100%;
     margin: 0px;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
   }
 
   .about-content {
@@ -548,6 +548,7 @@ nav {
     aspect-ratio: 1/1;
     background-size: 100% auto;
     background-position: 50% 20%;
+    margin-bottom: 5%;
   }
 
   #contact-me p {
