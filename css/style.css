@@ -551,14 +551,12 @@ aside h2 {
     height: 100%;
     width: 100%;
     line-height: 25px;
-    margin-top: 40px;
     font-size: small;
   }
 
   .about-image {
     width: 80%;
-    height: 200%;
-    padding-bottom: 25px;
+    aspect-ratio: 1/1;
     background-size: 100% auto;
     background-position: 50% 20%;
   }
