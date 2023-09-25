@@ -138,7 +138,6 @@ aside h2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 5px 5px;
   height: 100%;
 }
@@ -168,7 +167,7 @@ aside h2 {
 
 .slide:nth-child(1) {
   background-image: url("https://www.rayova.com/assets/images/software-developers.jpg");
-  height: calc(97% - 20px);
+  height: calc(97% - 22px);
 }
 
 .slide:nth-child(1):hover {
@@ -271,16 +270,14 @@ aside h2 {
 
 #about-section {
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   height: 300px;
 }
 
 .about-title {
   writing-mode: vertical-rl;
-  text-orientation: sideways;
-  height: 100%;
   text-align: center;
-  width: 50px;
   margin: 25px;
 }
 
@@ -302,8 +299,6 @@ aside h2 {
   flex-direction: column;
   justify-content: center;
   line-height: 25px;
-  font-size: medium;
-  height: 100%;
   width: 60%;
 }
 
@@ -335,6 +330,10 @@ aside h2 {
 .contact {
   align-self: center;
   display: flex;
+}
+
+.contact div {
+  margin: 0px 10px;
 }
 
 .footer-card {
@@ -369,30 +368,23 @@ aside h2 {
   }
 
   .menu {
-    height: 150px;
     text-shadow: 1px 1px 1px var(--sp-lightgreen); /* Improves mobile screen contrast */
   }
 
   #project-section {
-    flex-direction: column;
-  }
-
-  #project-section {
     height: 700px;
+    flex-direction: column;
   }
 
   .project-title {
     align-self: center;
     rotate: -90deg;
-    height: 100%;
     margin-top: 75px;
-    margin-bottom: -10%;
+    margin-bottom: -9%;
   }
 
   .project-content {
     width: 100%;
-    height: auto;
-    align-items: center;
   }
 
   .project-content ul {
@@ -453,12 +445,12 @@ aside h2 {
   }
 
   #project-section {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .project-title {
-    height: auto;
-    margin: -15%;
+    height: 25%;
+    margin-top: -75%;
   }
 
   .project-content {
@@ -470,7 +462,6 @@ aside h2 {
   .project-content ul {
     gap: 2px;
     flex-direction: row;
-    width: 100%;
     height: 90%;
   }
 
@@ -531,6 +522,12 @@ aside h2 {
     padding-right: 7px;
     margin: 5px;
   }
+
+  /*
+    The about section does not display properly in my devtools window, but when viewing 
+    the deployment at https://stellyes.github.io/web-resume , the page renders properly on
+    my smartphone. I prioritized that view of the webpage over my local one.
+  */
 
   #about-section {
     flex-direction: column-reverse;
