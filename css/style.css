@@ -153,7 +153,7 @@ nav {
 }
 
 .slide:nth-child(1) {
-  background-image: url("https://www.rayova.com/assets/images/software-developers.jpg");
+  background-image: url("../assets/contentaid.png");
   height: calc(97% - 22px);
 }
 
@@ -167,7 +167,7 @@ nav {
 }
 
 .slide:nth-child(2) {
-  background-image: url("https://mspoweruser.com/wp-content/uploads/2018/03/spotify-after.jpg");
+  background-image: url("../assets/jazz.png");
 }
 
 .slide:nth-child(3) {
@@ -185,12 +185,12 @@ nav {
 }
 
 .slide:nth-child(5) {
-  background-image: url("http://www.picserver.org/images/highway/phrases/anxiety.jpg");
+  background-image: url("../assets/weather.png");
   background-size: 100%;
 }
 
 .slide:nth-child(6) {
-  background-image: url("../assets/mini-project-1-edx.jpeg");
+  background-image: url("../assets/reset.png");
 }
 
 .slide h3 {
